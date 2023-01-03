@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    height: 300px;
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    padding: 20px;
+    border: solid 3px black;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.item{
+flex-basis: 50%;
+background: crimson;
+color: #fff;
+font-size: 2rem;
+text-align: center;
+/* line-height: 200px; */
+width: 100%;
+    
+    
+    
+}

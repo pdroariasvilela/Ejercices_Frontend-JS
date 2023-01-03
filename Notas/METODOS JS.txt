@@ -1,0 +1,7 @@
+Metodos JS:
+
+
+Math.ceil()
+La función Math.ceil() devuelve el entero mayor o igual más próximo a un número dado.
+
+

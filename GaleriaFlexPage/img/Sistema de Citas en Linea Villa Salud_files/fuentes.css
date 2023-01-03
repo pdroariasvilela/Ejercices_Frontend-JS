@@ -1,0 +1,41 @@
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(../fonts/google_font/sourcesanspro-light.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../fonts/google_font/sourcesanspro-regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro Semibold'), local('SourceSansPro-Semibold'), url(../fonts/google_font/sourcesanspro-semibold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/*fuente lema*/
+@font-face {
+  font-family: 'FreestyleScript';
+  src:  url('FreestyleScript-Regular.eot'); /* IE9 Compat Modes */
+  src:  url('../../assets/fonts/freestyle-script/FreestyleScript-Regular.eot?#iefix') format('embedded-opentype'),  
+        url('../../assets/fonts/freestyle-script/FreestyleScript-Regular.woff') format('woff'), 
+        url('../../assets/fonts/freestyle-script/FreestyleScript-Regular.ttf')  format('truetype'), 
+        url('../../assets/fonts/freestyle-script/FreestyleScript-Regular.svg#FreestyleScript-Regular') format('svg')
+}
+
+@font-face {
+  font-family: BerlinSansFBDemi;
+  src: url(../fonts/BerlinSansFBDemi.ttf);
+}

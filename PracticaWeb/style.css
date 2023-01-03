@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fragment Mono', monospace;
+}
+
+body{
+    min-height: 200vh;
+}
+
+.hero{
+    padding-top: .1px;
+    height: 100vh;
+    background-image: linear-gradient(180deg , #275dc28e 0%, #1d20b651 100%) , url(/img/hero\ port.avif);
+    background-position: center;
+    background-size: cover;
+    padding-top: 10px;
+    padding-top: .1px;
+    position: relative;
+}
+
+.container-text{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+.hero_title{
+    font-size: 4rem;
+}
+
+.hero_copy{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.hero_cta{
+    
+    background-color: white;
+    text-decoration: none;
+    color: #275dc2;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero_cta:hover{
+    background-color: #275dc2;
+    color: white;
+}
+
+.hero_wave{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+

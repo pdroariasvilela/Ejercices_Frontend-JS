@@ -1,0 +1,186 @@
+/*
+ * jQuery Basic Table
+ * Author: Jerry Low
+ */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700);
+
+table.bt thead,
+table.bt tbody th {
+  display: none;
+}
+
+table.bt tfoot th,
+table.bt tfoot td,
+table.bt tbody td {
+  border: none;
+  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+
+  /* IE 9 */
+  float: left\9;
+  width: 100%\9;
+}
+
+table.bt tfoot th::before,
+table.bt tfoot td::before,
+table.bt tbody td::before {
+  content: attr(data-th) ": ";
+  display: inline-block;
+  -webkit-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+  font-weight: bold;
+  width: 6.5em;
+}
+
+table.bt tfoot th.bt-hide,
+table.bt tfoot td.bt-hide,
+table.bt tbody td.bt-hide {
+  display: none;
+}
+
+table.bt tfoot th .bt-content,
+table.bt tfoot td .bt-content,
+table.bt tbody td .bt-content {
+  vertical-align: top;
+}
+
+.bt-wrapper.active {
+  max-height: 310px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/*----------------------*/
+
+table {
+  background: white;
+  border-collapse: collapse;
+  margin: 1.25em 0 0;
+  width: 100%;
+}
+
+table tr,
+table th,
+table td {
+  border: none;
+  border-bottom: 1px solid #e4ebeb;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.295rem; /*-- Para las celdas --*/
+}
+
+table th,
+table td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+table th {
+  background: #56a2cf;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+table tr td {
+  background: #eaf3f5;
+  color: #999999;
+}
+
+table tr:nth-of-type(2n+2) td {
+  background: #ffffff;
+}
+
+table.bt tfoot th,
+table.bt tfoot td,
+table.bt tbody td {
+  font-size: 1.325rem;  /*-- Para Responsive --*/
+  padding: 0;
+}
+
+table.bt tfoot th:before,
+table.bt tfoot td:before,
+table.bt tbody td:before {
+  background: #56a2cf;
+  color: white;
+  margin-right: 10px;
+  padding: 2px 10px;
+}
+
+table.bt tfoot th .bt-content,
+table.bt tfoot td .bt-content,
+table.bt tbody td .bt-content {
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+table.bt tfoot th:first-of-type:before,
+table.bt tfoot th:first-of-type .bt-content,
+table.bt tfoot td:first-of-type:before,
+table.bt tfoot td:first-of-type .bt-content,
+table.bt tbody td:first-of-type:before,
+table.bt tbody td:first-of-type .bt-content {
+  padding-top: 10px;
+}
+
+table.bt tfoot th:last-of-type:before,
+table.bt tfoot th:last-of-type .bt-content,
+table.bt tfoot td:last-of-type:before,
+table.bt tfoot td:last-of-type .bt-content,
+table.bt tbody td:last-of-type:before,
+table.bt tbody td:last-of-type .bt-content {
+  padding-bottom: 10px;
+}
+
+/*
+ * Two axis styling
+ */
+table.two-axis tr td:first-of-type {
+  background: #cadde1;
+}
+
+@media only screen and (max-width: 568px) {
+  table.two-axis tr td:first-of-type,
+  table.two-axis tr:nth-of-type(2n+2) td:first-of-type,
+  table.two-axis tr td:first-of-type:before {
+    background: #3584b3;
+    color: #ffffff;
+  }
+
+  table.two-axis tr td:first-of-type {
+    border-bottom: 1px solid #e4ebeb;
+  }
+
+  table.two-axis tr td:first-of-type:before {
+    padding-bottom: 10px;
+  }
+}
+
+.resultado {
+  /*border-bottom:1px solid #95A5A7;*/
+  color:#23A2B7 !important;
+  font-size:26px;
+  padding:0;
+  padding-bottom: 5px;
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+}  
+.datos {
+  border-bottom:0;
+  color: #95A5A7 !important;
+  margin-top :0;
+  margin-bottom: 7px;
+  font-size:16px;
+  padding:0;
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+} 
+
+.glyphicon-refresh-animate {
+  -animation: spin .7s infinite linear;
+  -webkit-animation: spin2 .7s infinite linear;
+}

@@ -1,0 +1,10 @@
+object-fit: cover; >> Para que no se deforme la imagen.
+
+overflow: hidden; >>Todo quede dentro y no salga de su container
+
+gap: 20px; Espaciado todo lo que esta dentro del container.
+
+flex-grow :1 >> solo deja el gap y se ve mejor al usar movil
+
+shorthand >> Ejemplo: flex : 350px >> tiene 3 elementos en 1
+

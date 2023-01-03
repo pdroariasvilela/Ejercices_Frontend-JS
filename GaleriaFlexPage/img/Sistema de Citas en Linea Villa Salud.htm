@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title>Sistema de Citas en Linea | Villa Salud</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Villa Salud Citas en Linea">
+    <meta name="author" content="Villa Salud">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">
+
+    <link href="https://citasenlinea.villasalud.pe/assets/less/styles.less" rel="stylesheet/css" media="all">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/fuentes.css">
+
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/font-awesome.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/xeditable.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/textAngular.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/basictable.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/select.css">
+
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/animate.css">
+    <!-- <link rel="stylesheet" href="bower_components/AngularJS-Toaster/toaster.min.css" /> -->
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/toaster.min.css">
+
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/skylo.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/sweet-alert.css">
+    <link rel="stylesheet" type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/prettify.css">
+    <link rel="stylesheet" type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-block-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/hotkeys.min.css">
+
+    <link rel="stylesheet" type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/isteven-multi-select.css">
+
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/styles_16112021.css">
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/flaticon.css">
+    <!--[if lt IE 10]>
+        {{ "js/media.match.min.js" | asset_url | script_tag }}
+        {{ "js/respond.min.js" | asset_url | script_tag }}
+        {{ "js/placeholder.min.js" | asset_url | script_tag }}
+    <![endif]-->
+    <link rel="stylesheet" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/custom_16112021.css">
+    <link type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/blue.css" rel="stylesheet">
+    <link type="text/css" href="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/primary.css" rel="stylesheet">
+    <!-- prochtml:remove:dist -->
+    <script async="" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/fbevents.js"></script><script async="" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/analytics.js"></script><script type="text/javascript"> less = { env: 'production' }; </script>
+    <script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/less.js"></script>
+    <!-- /prochtml -->
+    <link rel="icon" type="image/x-icon" href="https://citasenlinea.villasalud.pe/assets/img/isotipo2.png">
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        //ga('create', 'UA-68931427-3', 'villasalud.pe');
+        ga('create', 'UA-113702933-1', 'villasalud.pe');
+
+        ga(function(tracker) {
+          var clientId = tracker.get('clientId');
+          ga('set', 'userId', clientId);
+        });
+
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2324341174265579');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2324341174265579&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+<script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Cipher.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Messages.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Ajax.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.DOM.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.DOM.Builder.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Validator.Cards.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Cards.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.GA.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Effect.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.UI.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Init.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.Pay.js"></script><script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.PlanQuota.js"></script></head>
+
+<body ng-app="themesApp" ng-controller="MainController" class="animated-content ng-scope block-ui block-ui-anim-fade" ng-click="hideHeaderBar();hideChatBox()" to-top-on-load="" faux-offcanvas="" ng-init="getValidateSession();" block-ui="main" role="button" aria-busy="false" cz-shortcut-listen="true">
+
+  <style>
+    #topnav.navbar-default .navbar-brand,
+    #topnav.navbar-bluegraylight .navbar-brand,
+    #topnav.navbar-graylight .navbar-brand {
+        background: url("assets/img/logo.svg") no-repeat left 0 center;
+        background-size: contain;
+        width: 250px;
+    }
+
+	#topnav .navbar-brand {
+        background: url("assets/img/logo.svg") no-repeat left 0 center;
+        background-size: 166px;
+    }
+
+    #topnav .navbar-brand-app,
+    #topnav .navbar-brand-central,
+    #topnav .navbar-brand-whatsapp{
+        font: 0/0 a !important;
+        color: transparent !important;
+        text-shadow: none !important;
+        background-color: transparent !important;
+        border: 0 !important;
+        background-size: contain !important;
+        width: 200px;
+        height: 60px;
+        display: block;
+    }
+
+    #topnav .logo-app,
+    #topnav .logo-central,
+    #topnav .logo-whatsapp
+    {
+        float: right;
+    }
+
+    #topnav .navbar-brand-app{
+        background: url("assets/img/btn_google_play_iso_der.svg") no-repeat left 0 center;
+        height: 33px !important;
+    }
+    #topnav .navbar-brand-central{
+        background: url("assets/img/logo-central-20211112.png") no-repeat left 0 center;
+    }
+
+    #topnav .navbar-brand-whatsapp {
+        background: url("assets/img/logo-whatsapp-20211112.png") no-repeat left 0 center;
+    }
+    #topnav .navbar-brand {
+        background: url("assets/img/logo.svg") no-repeat left 0 center;
+        background-size: 166px;
+    }
+
+    .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus, .tt-dropdown-menu > .active > a, .tt-dropdown-menu > .active > a:hover, .tt-dropdown-menu > .active > a:focus, .tt-suggestion > p:hover, .tt-suggestion > p:focus, .tt-suggestion.tt-cursor > p {
+        background-color: #5d7581;
+
+    }
+</style>
+    <!-- <header id="topnav" class="navbar {{getLayoutOption('topNavThemeClass')}} navbar-fixed-top" role="banner" ng-cloak ng-if="!isLoggedIn" >
+        <section class="page-header logo-left secondary-page" >
+            <div class="container col-md-12 ">
+                <div class="clearfix row">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="logo-area">
+                            <a href="https://villasalud.pe" class="navbar-brand" target="_blank" >Villa Salud</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-8 col-xs-8" ng-if="!isLoggedIn">
+                        <div class="logo-central">
+                            <a href="" class="navbar-brand-central" >Villa Salud</a>
+                        </div>
+                        <div class="logo-whatsapp">
+                            <a href="" class="navbar-brand-whatsapp" >Villa Salud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="page-separador"></div>
+    </header> -->
+
+    <header id="topnav" class="navbar navbar-default navbar-fixed-top" role="banner">
+        <section class="page-header logo-left secondary-page">
+            <div class="container col-xs-12 ">
+                <div class="clearfix row">
+                    <div class="col-md-2 col-sm-5 col-xs-6">
+                        <div class="logo-area">
+                            <a href="#/" class="navbar-brand">Villa Salud</a>
+                        </div>
+                    </div>
+
+                    <!-- ngIf: isLoggedIn --><div class="col-md-10 col-sm-7 col-xs-6 menu ng-scope" ng-if="isLoggedIn" style="">
+                        <nav class="ng-scope" ng-controller="NavigationController">
+                            <ul class="nav navbar-nav toolbar" style="margin-left: 30px;">
+                                <li class="menu-item">
+                                    <a href="" ng-click="goToUrl('/');" ng-class="{active:getUrlActual() == '/'}" class="" style="">INICIO</a>
+                                </li>
+
+								<li class="menu-item dropdown">
+									<a href="" ng-click="goToUrl('/atenciones-presenciales');" class="dropdown-toggle" ng-class="{active:
+											getUrlActual() == '/atenciones-presenciales' ||
+											getUrlActual() == '/seleccionar-cita' ||
+											getUrlActual() == '/resumen-cita' ||
+											getUrlActual() == '/procedimientos' ||
+											getUrlActual().indexOf('/procedimientos/') &gt; -1
+										}" data-toggle="dropdown">ATENCIONES<br>PRESENCIALES <b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="" ng-click="goToUrl('/seleccionar-cita');" ng-class="{active:
+											getUrlActual() == '/seleccionar-cita' ||
+											getUrlActual() == '/resumen-cita'
+
+										}">CONSULTAS</a></li>
+
+										<li><a href="" ng-click="goToUrl('/procedimientos');" ng-class="{active:
+											getUrlActual() == '/procedimientos' ||
+											getUrlActual().indexOf('/procedimientos/') &gt; -1
+
+										}">PROCEDIMIENTOS Y<br>EXÁMENES</a></li>
+									</ul>
+								</li>
+
+								<li class="menu-item dropdown">
+									<a href="" ng-click="goToUrl('/atenciones-virtuales');" class="dropdown-toggle" ng-class="{active:
+											getUrlActual() == '/atenciones-virtuales' ||
+											getUrlActual() == '/seleccionar-videoconsulta' ||
+											getUrlActual() == '/resumen-videoconsulta' ||
+											getUrlActual() == '/procedimientos-virtuales' ||
+											getUrlActual().indexOf('/procedimientos-virtuales/') &gt; -1
+										}" data-toggle="dropdown">ATENCIONES<br>VIRTUALES <b class="caret"></b>
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="" ng-click="goToUrl('/seleccionar-videoconsulta');" ng-class="{active:
+											getUrlActual() == '/seleccionar-videoconsulta' ||
+											getUrlActual() == '/resumen-videoconsulta'
+										}">CONSULTAS</a></li>
+
+										<li><a href="" ng-click="goToUrl('/procedimientos-virtuales');" ng-class="{active:
+											getUrlActual() == '/procedimientos-virtuales' ||
+											getUrlActual().indexOf('/procedimientos-virtuales/') &gt; -1
+										}">PROCEDIMIENTOS</a></li>
+									</ul>
+								</li>
+
+                                <li class="menu-item">
+                                    <a href="" ng-click="goToUrl('/atenciones-pendientes')" ng-class="{active:getUrlActual() == '/atenciones-pendientes'}">ATENCIONES<br>PENDIENTES</a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="" ng-click="goToUrl('/historial-citas');" ng-class="{active:getUrlActual() == '/historial-citas'}" class="active" style="">HISTORIAL</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="" ng-click="goToUrl('/resultado-laboratorio');" ng-class="{active:getUrlActual() == '/resultado-laboratorio'}">RESULTADOS</a>
+                                </li>
+                                <!-- <li class="menu-item" >
+                                    <a href="" ng-click="goToUrl('/promociones');" ng-class="{active:getUrlActual() == '/promociones' || getUrlActual() == '/promociones-detalle'}">OFERTAS</a>
+                                </li> -->
+
+
+                                <li class="menu-item pull-right">
+                                    <!-- ngIf: isLoggedIn --><a ng-if="isLoggedIn" href="" ng-click="btnLogoutToSystem();" class="icons ng-scope" tooltip-placement="bottom" uib-tooltip="Salir">
+                                        <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/salir-20211112.png">
+                                        <!-- <img src="assets/img/icons/icon-salir.png" /> -->
+                                    </a><!-- end ngIf: isLoggedIn -->
+                                </li>
+
+                                <li class="menu-item pull-right" style="bottom: 3px;">
+                                    <a target="_blank" href="https://www.youtube.com/watch?v=nXHS7scVTiQ" class="icons" tooltip-placement="bottom" uib-tooltip="Tutorial">
+                                        <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/tutorial.png" style="height: 45px;width:45px;">
+                                        <!-- <img src="assets/img/icons/icon-tutorial.png" /> -->
+                                    </a>
+                                </li>
+
+                                <li class="menu-item pull-right">
+                                    <a href="" ng-click="goToUrl('/mi-perfil');" tooltip-placement="bottom" uib-tooltip="Mi Perfil" class="icons username">
+                                        <img ng-src="https://citasenlinea.villasalud.pe/assets/img/dinamic/usuario/noimage.png" alt="" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/noimage.png">
+                                        <!-- <span class="username-saludo pull-right">¡Hola! {{fSessionCI.nombres}}</span> -->
+                                    </a>
+                                </li>
+
+                                <li class="menu-item pull-right contacto">
+                                    <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/central-20211112.png">
+                                </li>
+
+                                <li class="menu-item pull-right contacto">
+                                    <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/whatsapp-20211112.png">
+                                </li>
+                            </ul>
+
+                            <span class="btn-open pull-right" ng-click="openNav();" role="button">
+                                <i class="fa fa-bars"></i>
+                            </span>
+                            <div id="SideNav" class="sidenav menu-mobile">
+                                <span class="btn-close" ng-click="closeNav();" role="button">
+                                    <i class="ti ti-close"></i>
+                                </span>
+
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href="" ng-click="goToUrl('/mi-perfil');closeNav();" class="username" style="text-align: center;">
+                                            <img ng-src="https://citasenlinea.villasalud.pe/assets/img/dinamic/usuario/noimage.png" alt="" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/noimage.png">
+                                        </a>
+
+                                        <a href="" ng-click="goToUrl('/'); closeNav();">INICIO</a>
+
+                                        <ul class="nav">
+                                            <li class="dropdown">
+                                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                                    ATENCIONES PRESENCIALES
+                                                    <b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="" ng-click="goToUrl('/seleccionar-cita');closeNav();" ng-class="{active:
+                                                    			getUrlActual() == '/seleccionar-cita' ||
+                                                    			getUrlActual() == '/resumen-cita'
+                                                    		}">CONSULTAS</a></li>
+
+                                                    <li><a href="" ng-click="goToUrl('/procedimientos');closeNav();" ng-class="{active:
+                                                    			getUrlActual() == '/procedimientos' ||
+                                                    			getUrlActual().indexOf('/procedimientos/') &gt; -1
+                                                    		}">PROCEDIMIENTOS Y<br>EXÁMENES</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                                    ATENCIONES VIRTUALES
+                                                    <b class="caret"></b>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="" ng-click="goToUrl('/seleccionar-videoconsulta');closeNav();" ng-class="{active:
+                                                    			getUrlActual() == '/seleccionar-videoconsulta' ||
+											                    getUrlActual() == '/resumen-videoconsulta'
+                                                    		}">CONSULTAS</a></li>
+
+                                                    <li><a href="" ng-click="goToUrl('/procedimientos-virtuales');closeNav();" ng-class="{active:
+                                                    			getUrlActual() == '/procedimientos-virtuales' ||
+											                    getUrlActual().indexOf('/procedimientos-virtuales/') &gt; -1
+                                                    		}">PROCEDIMIENTOS</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+
+										<a href="" ng-click="goToUrl('/atenciones-pendientes');closeNav();" ng-class="{active:
+												getUrlActual() == '/atenciones-pendientes'
+											}">ATENCIONES PENDIENTES</a>
+
+                                        <a href="" ng-click="goToUrl('/historial-citas');closeNav();" ng-class="{active:getUrlActual() == '/historial-citas'}" class="active" style="">HISTORIAL</a>
+                                        <a href="" ng-click="goToUrl('/resultado-laboratorio');closeNav();" ng-class="{active:getUrlActual() == '/resultado-laboratorio'}">RESULTADOS</a>
+                                        <a href="" ng-click="goToUrl('/mi-perfil');closeNav();" ng-class="{active:getUrlActual() == '/mi-perfil'}">MI PERFIL</a>
+                                        <!-- <a href="" ng-click="goToUrl('/promociones');closeNav();" ng-class="{active:getUrlActual() == '/promociones' || getUrlActual() == '/promociones-detalle'}">OFERTAS</a> -->
+                                        <a target="_blank" href="https://www.youtube.com/watch?v=nXHS7scVTiQ">
+                                           <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/tutorial.png"> TUTORIAL
+                                        </a>
+                                        <a href="#" ng-click="closeNav();btnLogoutToSystem();">SALIR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div><!-- end ngIf: isLoggedIn -->
+
+					<!-- ngIf: !isLoggedIn -->
+
+                </div>
+            </div>
+        </section>
+        <div class="page-separador" id="focusDetalleProducto"></div>
+    </header>
+
+	<!-- ngIf: isLoggedIn && fSessionCI.idusuario && fSessionCI.vc_pendientes.length > 0 && openPend -->
+
+
+
+	<div id="wrapper" class="" ng-class="{'wrapper-top' : openPend &amp;&amp; isLoggedIn &amp;&amp; fSessionCI.vc_pendientes.length &gt; 0}">
+        <div id="layout-static">
+            <div class="static-content-wrapper">
+                <div class="static-content">
+                    <!-- ngView:  --><div class="page-content ng-scope" ng-view="" style=""><div class="content page-historial ng-scope" ng-controller="historialCitasController">
+	<!-- ngIf: isLoggedIn && fSessionCI.idusuario && fSessionCI.banner_activo -->
+  <div class="container-fluid">
+    <div class="col-lg-8 col-lg-offset-2 col-md-12 col-xs-12 col-sm-12">
+      <!-- HISTORIAL -->
+      <!-- ngIf: verHistorial --><div class="row ng-scope" ng-if="verHistorial">
+        <div class="tab-heading col-xs-12">
+          <div>
+              <h2 class="title text-blue">
+                  <span class="icon"><i class="fa fa-list"></i></span> Historial
+              </h2>
+              <p class="descripcion">Mira tu historial de citas... Próximas y Pasadas. Utiliza los filtros para ubicarlas más rápido!.</p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 mb-md">
+          <div class="filtros-historial">
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-md">
+                <label class="control-label">Paciente:</label>
+                <select class="form-control  ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="fBusqueda.familiar" ng-change="listarHistorial();" ng-options="item.descripcion for item in listaFamiliares" aria-invalid="false" style=""><option label="PEDRO DAVID [TITULAR]" value="object:102" selected="selected">PEDRO DAVID [TITULAR]</option></select>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-md">
+                <label class="control-label">Sede:</label>
+                <select class="form-control  ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched" ng-model="fBusqueda.sede" ng-change="listarEspecialidad();listarHistorial();" ng-options="item.descripcion for item in listaSedes" aria-invalid="false" style=""><option label="SEDE" value="object:97">SEDE</option><option label="LURIN TORRE 1" value="object:98">LURIN TORRE 1</option><option label="LURIN TORRE 2" value="object:99">LURIN TORRE 2</option><option label="SAN JUAN DE LURIGANCHO" value="object:100">SAN JUAN DE LURIGANCHO</option><option label="VILLA EL SALVADOR" value="object:101" selected="selected">VILLA EL SALVADOR</option></select>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-md">
+                <label class="control-label">Especialidad:</label>
+                <select class="form-control  ng-pristine ng-valid ng-not-empty ng-touched" ng-model="fBusqueda.especialidad" ng-change="listarHistorial();" ng-options="item.descripcion for item in listaEspecialidad" aria-invalid="false" style=""><option label="ESPECIALIDAD " value="object:66" selected="selected">ESPECIALIDAD </option></select>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 mb-md">
+                <label class="control-label">Estado:</label>
+                <select class="form-control ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched" ng-model="fBusqueda.tipoCita" ng-change="listarHistorial(); mostrarTablasCampania();" ng-options="item.descripcion for item in listaTipoCita" aria-invalid="false" style=""><option label="CITAS PENDIENTES" value="object:67">CITAS PENDIENTES</option><option label="CITAS REALIZADAS" value="object:68" selected="selected">CITAS REALIZADAS</option><option label="CAMPAÑAS" value="object:69">CAMPAÑAS</option><option label="PROCEDIMIENTOS" value="object:70">PROCEDIMIENTOS</option></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 leyenda pull-left mb-sm">
+          <p style="font-size: 1.2em;">
+            Identifica y descarga tus comprobantes.
+            Cita: <span class="favorito animation" style="color: #4caf50;"><i class="fa fa-download"></i></span>
+            <!--| Pago: <span class="favorito animation" style="color: #4caf50;"><i class="ti ti-money"></i></span>-->
+            | Boleta: <span class="favorito animation" style="color: #4caf50;"><i class="fa fa-file-text-o"></i></span>
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-xs-12">
+          <!-- ngIf: mostrarCitas == true && listaDeCitas.length === 0 && listaCitasVC.length === 0 -->
+
+
+          <!-- ngIf: mostrarCampanias == true && listaDeCitas.length === 0 -->
+        </div>
+        <!-- HISTORIAL DE CITAS -->
+        <!-- ngIf: mostrarCitas == true --><div class="historial-citas col-md-12 col-xs-12 col-sm-12 ng-scope" ng-if="mostrarCitas == true">
+          <div class="mi-grid grid-citas mb-md ">
+            <div class="body-grid" style="min-height: 100px;" ng-show="listaDeCitas.length &gt; 0" scroller="">
+              <div class="header row-grid row-cita">
+                <div class="cell-grid cell-cita" style="width:19%;">
+                  PACIENTE
+                </div>
+                <div class="cell-grid cell-cita" style="width:13%;">
+                  SEDE
+                </div>
+                <div class="cell-grid cell-cita" style="width:18%;">
+                  ESPECIALIDAD
+                </div>
+                <div class="cell-grid cell-cita" style="width:18%;">
+                  MÉDICO
+                </div>
+                <div class="cell-grid cell-cita" style="width:20%;">
+                  FECHA Y HORA
+                </div>
+                <div class="cell-grid cell-cita" style="width:4%;">
+                  <i class="fa fa-download"></i>
+                </div>
+                <!-- ngIf: fBusqueda.tipoCita.id != 'R' -->
+                <div class="cell-grid cell-cita" style="width:4%;">
+                  <i class="fa fa-file-text-o"></i>
+                </div>
+              </div>
+              <!-- ngRepeat: cita in listaDeCitas --><div ng-repeat="cita in listaDeCitas" class="row-grid row-cita row-cita-historial ng-scope" style="">
+                  <div class="cell-grid cell-cita ng-binding" style="width:19%;">
+                    <span class="icono-cita"><img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-nombre.png"> <span>PACIENTE:</span></span>
+                    PEDRO DAVID ARIAS VILELA
+                  </div>
+                  <div class="cell-grid cell-cita ng-binding" style="width:13%;">
+                    <span class="icono-cita"><img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-sede.png"> <span>SEDE:</span></span>
+                    VILLA EL SALVADOR
+                  </div>
+                  <div class="cell-grid cell-cita ng-binding" style="width:18%;">
+                    <span class="icono-cita"><img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-especialidad.png"> <span>ESPECIALIDAD:</span></span>
+                    OTORRINOLARINGOLOGIA
+                  </div>
+                  <div class="cell-grid cell-cita ng-binding" style="width:18%;">
+                    <span class="icono-cita"><img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-medico.png"> <span>MÉDICO:</span></span>
+                    NICOLAS BERNEDO SANCHEZ
+                  </div>
+                  <div class="cell-grid cell-cita ng-binding" style="width:20%; text-align:center;">
+                    <span class="icono-cita"><img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-fechahora.png"> <span>FECHA Y HORA:</span></span>
+                    10-09-2019 03:30 pm
+                  </div>
+                  <div class="cell-grid cell-cita comprobante" style="width:4%; text-align:center;cursor: pointer;padding: 0;">
+                    <span class="icono-cita btn btn-secundario" uib-tooltip="Descargar Comprobante" ng-click="descargaComprobanteCita(cita);" role="button">
+                          <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-comprobante.png"> COMPROBANTE
+                    </span>
+                    <span class="cita" ng-click="descargaComprobanteCita(cita);" uib-tooltip="Descargar Comprobante" style="font-size: 20px;" role="button">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </span><div tooltip-animation-class="fade" uib-tooltip-classes="" ng-class="{ in: isOpen() }" uib-tooltip-popup="" title="" content="Descargar Comprobante" placement="top" popup-class="" animation="animation" is-open="isOpen" origin-scope="origScope" style="visibility: visible; display: block; top: 7px; left: 1050.99px;" class="ng-isolate-scope top fade tooltip">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner ng-binding" ng-bind="content">Descargar Comprobante</div>
+</div>
+                  </div>
+                  <!-- ngIf: fBusqueda.tipoCita.id != 'R' -->
+                  <div class="cell-grid cell-cita boleta" style="width:4%; text-align:center;cursor: pointer;padding: 0;">
+                    <span class="icono-cita btn btn-default" ng-click="descargaComprobantePago(cita);" role="button">
+                          <i class="fa fa-file-pdf-o"></i>
+                          <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icon-precio.png"> BOLETA
+                    </span>
+                    <span ng-click="descargaComprobantePago(cita);" uib-tooltip="Descargar Boleta" tooltip-placement="top" tooltip-trigger="mouseenter" role="button">
+                      <i class="fa fa-file-text-o" style="font-size: 20px;padding: 5px 1px; color: #46c5df;"></i>
+                    </span><div tooltip-animation-class="fade" uib-tooltip-classes="" ng-class="{ in: isOpen() }" uib-tooltip-popup="" title="" content="Descargar Boleta" placement="top" popup-class="" animation="animation" is-open="isOpen" origin-scope="origScope" style="visibility: visible; display: block; top: 14px; left: 1118.56px;" class="ng-isolate-scope top fade tooltip in">
+  <div class="tooltip-arrow"></div>
+  <div class="tooltip-inner ng-binding" ng-bind="content">Descargar Boleta</div>
+</div>
+                  </div>
+              </div><!-- end ngRepeat: cita in listaDeCitas -->
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div><!-- end ngIf: mostrarCitas == true -->
+
+        <!-- HISTORIAL DE CAMPAÑAS -->
+        <!-- ngIf: mostrarCampanias == true -->
+
+        <!-- HISTORIAL DE PROCEDIMIENTOS -->
+        <!-- ngIf: mostrarProcedimientos == true -->
+      </div><!-- end ngIf: verHistorial -->
+
+      </div>
+
+    </div>
+  </div>
+  <div class="row mb ng-scope">
+    <subscribete class="ng-isolate-scope"><div>
+    <div class="col-lg-8 col-lg-offset-2 col-md-12" style="background: #f2f2f2;padding: 12px 50px;">
+        <div class="row">
+            <img src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/carta%20suscribete-01.png" class="ml-lg mr-lg pull-left" width="60px">
+            <div class="col-lg-3 col-md-4 mt-md pull-left">
+                <strong>SUBSCRÍBETE A NUESTRO BOLETÍN</strong><br>
+                <span>Y ENTÉRATE DE LAS MEJORES OFERTAS</span>
+            </div>
+
+            <ng-form class="col-lg-7 col-md-6 mt-md mb-md pull-left ng-pristine ng-valid ng-valid-email" style="">
+                <div class="input-group input-icon right">
+                    <input class="form-control input-warning input-lg ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" ng-model="$ctrl.email" type="email" name="" placeholder="Ingresa tu email..." ng-change="$ctrl.limpiarMensaje();" aria-invalid="false" style="">
+                    <span class="btn btn-warning input-group-addon" ng-click="$ctrl.btnSubscribe();" role="button">INSCRÍBETE</span>
+                </div>
+                <span class=""></span>
+            </ng-form>
+
+        </div>
+
+    </div>
+</div></subscribete>
+
+  </div>
+</div> <!--wrap -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery-2.2.4.min.js"></script>
+
+
+    <script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/config.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/modernizr.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/underscore.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-animate.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-locale_es-pe.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-aria.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-touch.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-sanitize.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-cookies.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-resource.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-route.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-local-storage.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-ui-utils.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.dataTables.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/dataTables.bootstrap.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bootstrap.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bootstrap-slider.js"></script>
+
+     <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/ui-bootstrap-tpls-0.14.1.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.core.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.widget.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.mouse.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.draggable.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.sortable.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.ui.resizable.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.easing.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.flot.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.flot.stack.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.flot.pie.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.flot.resize.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.flot.tooltip.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-ui-tree.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/sweetalert.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/sweet-alert.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/select.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/select_002.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/moment.js"></script>
+    <!-- <script src="bower_components/AngularJS-Toaster/toaster.min.js"></script> -->
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/toaster.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bootbox.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/flow.js"></script> <!-- subida de archivos -->
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/ng-flow.js"></script> <!-- subida de archivos -->
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/enquire.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.shuffle.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.core.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.buttons.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.callbacks.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.confirm.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.desktop.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.history.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pnotify.nonblock.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.nanoscroller.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/scrollable.js"></script>
+
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pdfmake.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/vfs_fonts.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/ui-grid.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.basictable.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-ui-switch.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/ocLazyLoad.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/skylo.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bootstrap-datepicker.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/velocity.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/velocity.ui.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.inputmask.bundle.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/jquery.pulsate.js"></script>
+
+    <!-- <script src="bower_components/angular-socket-io/socket.js"></script>
+    <script src="bower_components/webcam/dist/webcam.min.js"></script> -->
+
+    <script type="text/javascript" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/fileinput.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/wijets.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bootstrap-tabdrop.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-block-ui.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/hotkeys.min.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/gm.datepickerMultiSelect.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/isteven-multi-select.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/captcha.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/icheck.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/mainController_17112022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/navigationController.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/notificationsController.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/messagesController.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/directives.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/form.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/ui.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/templateOverrides.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/templates.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/services.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/theme_002.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/theme.js"></script>
+    <!-- Include the JS ReCaptcha API-->
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/angular-recaptcha.min.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/shortcut.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/notFoundController.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/errorPageController.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/scrollglue.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/loadModules.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/app_16112021.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/components_20092022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/subscribete.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/bannerPromocion_22072020.js"></script>
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/login_16112021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/inicio_05022021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/sede.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/usuario_16112021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/pariente_13122021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/parentesco.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/historialCitas_17112022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/programarCita_26042022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/analisis.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/venta.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/especialidad.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/resultadoLaboratorio.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/especialidad.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/demo.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/procedimientos_29032022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/procedimientosVirtuales_20012021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/promociones_16112021.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/promocionesdetalles_18082022.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/promocionesresumenpago.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/redirectPromociones.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/compraResumen.js"></script>
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/atencionesPendientes_20210312.js"></script>
+    <!-- plugins externos -->
+
+    <script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/v3.json"></script>
+    <!--PAY-ME-->
+    <script id="PaymeFormScriptStarter" src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/PF.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/plugins/socket.io/2.0.3/socket.io.js"></script> -->
+
+    <!--https://vpayment.verifika.com/VPOS2/js/PF/PF.js  == PRODUCCION-->
+    <!--https://integracion.alignetsac.com/VPOS2/js/PF/PF.js  == DESARROLLO-->
+
+
+    <script type="text/ng-template" id="myToastTemplate.html">
+        <p>Recuerda que tu próxima <strong>videoconsulta</strong> está por empezar <strong>en {{minutos}} min.</strong> <br/>
+          Verifica tu señal de internet por favor.
+        </p>
+        <a class="btn btn-toast mt-md pr-md pl-md" ng-click="goToUrl('/atenciones-pendientes')">EMPEZAR</a>
+        <p>Si vas a entrar por el celular <strong>recuerda entrar por </strong> <a href="https://play.google.com/store/apps/details?id=com.villasalud.villasalud_citasenlinea" target="_blank">nuestra app</a></p>
+    </script>
+
+
+<script src="Sistema%20de%20Citas%20en%20Linea%20Villa%20Salud_files/app.js" type="text/javascript"></script><div class="cfp-hotkeys-container fade ng-scope" ng-class="{in: helpVisible}" style="display: none;"><div class="cfp-hotkeys"><!-- ngIf: !header --><h4 class="cfp-hotkeys-title ng-binding ng-scope" ng-if="!header">Keyboard Shortcuts:</h4><!-- end ngIf: !header --><!-- ngIf: header --><table><tbody><!-- ngRepeat: hotkey in hotkeys | filter:{ description: '!$$undefined$$' } --><tr ng-repeat="hotkey in hotkeys | filter:{ description: '!$$undefined$$' }" class="ng-scope"><td class="cfp-hotkeys-keys"><!-- ngRepeat: key in hotkey.format() track by $index --><span ng-repeat="key in hotkey.format() track by $index" class="cfp-hotkeys-key ng-binding ng-scope">?</span><!-- end ngRepeat: key in hotkey.format() track by $index --></td><td class="cfp-hotkeys-text ng-binding">Show / hide this help menu</td></tr><!-- end ngRepeat: hotkey in hotkeys | filter:{ description: '!$$undefined$$' } --><tr ng-repeat="hotkey in hotkeys | filter:{ description: '!$$undefined$$' }" class="ng-scope" style=""><td class="cfp-hotkeys-keys"><!-- ngRepeat: key in hotkey.format() track by $index --><span ng-repeat="key in hotkey.format() track by $index" class="cfp-hotkeys-key ng-binding ng-scope">a</span><!-- end ngRepeat: key in hotkey.format() track by $index --></td><td class="cfp-hotkeys-text ng-binding">Sort by price</td></tr><!-- end ngRepeat: hotkey in hotkeys | filter:{ description: '!$$undefined$$' } --></tbody></table><!-- ngIf: footer --><div class="cfp-hotkeys-close" ng-click="toggleCheatSheet()" role="button">×</div></div></div><div block-ui-container="" class="block-ui-container ng-scope"><div class="block-ui-overlay"></div><div class="block-ui-message-container" aria-live="assertive" aria-atomic="true"><div class="block-ui-message ng-binding" ng-class="$_blockUiMessageClass">Cargando historial de citas...</div></div></div><div><div class="sweet-overlay" tabindex="-1"></div><div class="sweet-alert" tabindex="-1"><div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span></div><div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div> <div class="icon info"></div> <div class="icon success"> <span class="line tip"></span> <span class="line long"></span> <div class="placeholder"></div> <div class="fix"></div> </div> <div class="icon custom"></div> <h2>Title</h2><p>Text</p><button class="cancel" tabindex="2">Cancel</button><button class="confirm" tabindex="1">OK</button></div></div></body></html>

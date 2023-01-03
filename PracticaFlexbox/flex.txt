@@ -1,0 +1,54 @@
+flex-wrap --->> De forma predeterminada, todos los elementos flexibles 
+intentarán encajar en una línea. Puede cambiar eso y permitir que los 
+elementos se ajusten según sea necesario con esta propiedad.
+
+nowrap(predeterminado): todos los elementos flexibles estarán en una línea
+
+wrap:Los elementos flexibles se ajustarán a varias líneas, de arriba a abajo.
+
+wrap-reverse:Los elementos flexibles se ajustarán a varias líneas de abajo hacia arriba.
+
+
+---------------------------------------------
+[ flex-direction: row; 
+Main-axis >> Parte de izquierda a derecha 
+Cross-axis >> De arriba hacia abajo 
+
+--Parte de izquierda a derecha en filas.
+]
+
+[flex-direction: row-reverse;
+
+--Cambia el sentido de derecha a izquierda.]
+
+--------------------------------------------
+
+[flex-direction: column;
+
+cross-axis >> <izquierda a derecha
+Main-axis >> arriba a abajo
+
+Lo mismo con flex-direction:  column-reverse;
+
+]
+
+
+---------------------- NOTAS ---------------------
+
+justify-content: space-between; -
+LAS CAJAS SE APEGAN A LOS COSTADOS Y AL MEDIO SE REPARTEN LAS MEDIDAS
+
+justify-content: space-around; -
+TENDRA EL ESPACIO DISPONIBLE HACIA TODOS LOS LADOS , POR IGUAL
+LOS ESPACIOS SE SUMAN , LOS DEL MEDIO SE VERAN GRANDES PORQUE SE UNEN SUS ESPACIOS
+
+
+justify-content: space-evenly;-
+TODOS LOS LADOS SON IGUALES , LOS DE AFUERA YA ADENTRO.
+
+
+
+
+
+1.- flex-direction: column; -- coloca en columnas
+2.- flex-direction: row; -- Filas
